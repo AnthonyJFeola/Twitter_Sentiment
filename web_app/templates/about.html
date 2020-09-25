@@ -1,0 +1,16 @@
+{% extends "bootstrap_layout.html" %}
+{% set active_page = "prediction_results" %}
+
+{% block content %}
+
+    <h2>About</h2>
+
+    <p>This model uses Keras and Tensorflow end-to-end open source 
+    machine learning libraries to implement a deep neural network for sentiment 
+    analysis. The model is trained on a relatively small dataset of 27,480 
+    raw tweets from real users. The tweets are minimally pre-processed before 
+    entering the network architecture and result in accuracy of 73.51% on 
+    a validation set of 3,534 tweets. This web application was made possible using 
+    Flask microframework.</p>
+
+{% endblock %}

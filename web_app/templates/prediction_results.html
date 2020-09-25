@@ -3,11 +3,13 @@
 
 {% block content %}
 
-    <h2>Results!</h2>
-
-    <p>Between '@{{ screen_name_a }}' and '@{{ screen_name_b }}',
-        the user who is most likely to say '{{ tweet_text }}'
-        is '@{{ screen_name_most_likely }}'
-    </p>
+    <h1>Results!</h1>
+    <br>
+    <h3>Tweet:</h3>
+    <p>"{{ tweet_text }}"</p>
     
+    <h3>Sentiment: {{ sentiment }}</h3>
+    <br>
+    <p>Click 'Start Over' in the header to predict on another tweet!</p>
+
 {% endblock %}
