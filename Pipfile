@@ -9,6 +9,10 @@ verify_ssl = true
 flask = "*"
 flask-sqlalchemy = "*"
 flask-migrate = "*"
+numpy = "*"
+tensorflow = "*"
+spacy = "*"
+pandas = "*"
 
 [requires]
 python_version = "3.7"
