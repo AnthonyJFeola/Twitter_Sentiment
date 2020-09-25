@@ -5,8 +5,8 @@ from flask import Blueprint, request, jsonify, render_template
 import numpy as np
 import pickle
 
-from keras.preprocessing.text import Tokenizer
-from keras.preprocessing import sequence
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing import sequence
 
 import spacy
 
