@@ -8,12 +8,13 @@ import pickle
 import tensorflow as tf
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing import sequence
+from tensorflow.keras.models import load_model
 
 import spacy
 
 maxlen = 500
 
-restored_model = tf.keras.models.load_model('web_app/Twitter_Sentiment_Classification.h5')
+restored_model = load_model('web_app/Twitter_Sentiment_Classification.h5')
 
 with open('web_app/tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
