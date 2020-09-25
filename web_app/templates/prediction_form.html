@@ -1,0 +1,17 @@
+{% extends "bootstrap_layout.html" %}
+{% set active_page = "prediction_form" %}
+
+{% block content %}
+    
+    <h2>Generate Sentiment Prediction:</h2>
+
+    <p>Use the field below to predict the sentiment of a given tweet.</p>
+
+    <form action="/predict" method="POST">
+        <label>Tweet Text:</label>
+        <input type="text" name="tweet_text" placeholder="Enter desired tweet">
+        <br>
+        <button>Submit</button>
+    </form>
+
+{% endblock %}
