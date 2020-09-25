@@ -14,7 +14,7 @@ import spacy
 
 maxlen = 500
 
-restored_model = load_model('web_app/Twitter_Sentiment_Classification.h5', compile=False)
+restored_model = load_model('web_app/Twitter_Sentiment_Classification.h5')
 
 with open('web_app/tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
