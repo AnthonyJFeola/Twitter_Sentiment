@@ -19,7 +19,7 @@ restored_model = load_model('web_app/Twitter_Sentiment_Classification.h5')
 with open('web_app/tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
-nlp = spacy.load("en_core_web_lg")
+nlp = spacy.load("en")
 
 def spacy_cleaning(df_col):
   doc = nlp(df_col)
