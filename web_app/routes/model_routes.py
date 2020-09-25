@@ -1,15 +1,12 @@
 # web_app/routes/model_routes.py
 
 from flask import Blueprint, request, jsonify, render_template
-import pandas as pd
+
 import numpy as np
 import pickle
 import tensorflow as tf
 from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing import sequence
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Embedding, Flatten, GlobalMaxPooling2D, Dropout
-from tensorflow.keras.layers import LSTM, SpatialDropout1D, Conv1D, GlobalMaxPooling1D
+
 import spacy
 
 maxlen = 500

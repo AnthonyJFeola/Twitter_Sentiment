@@ -6,16 +6,11 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-flask = "*"
-flask-sqlalchemy = "*"
-flask-migrate = "*"
-numpy = "*"
 spacy = "*"
-pandas = "*"
+tensorflow = "*"
 gunicorn = "*"
-psycopg2-binary = "*"
-keras = "*"
-tensorflow-cpu = "*"
+flask = "*"
+numpy = "*"
 
 [requires]
 python_version = "3.8"
